@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		973D449B2276EF7A002288AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973D449A2276EF7A002288AE /* AppDelegate.swift */; };
-		973D449D2276EF7A002288AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973D449C2276EF7A002288AE /* ViewController.swift */; };
+		973D449D2276EF7A002288AE /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973D449C2276EF7A002288AE /* TableViewController.swift */; };
 		973D44A02276EF7A002288AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973D449E2276EF7A002288AE /* Main.storyboard */; };
 		973D44A22276EF7B002288AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973D44A12276EF7B002288AE /* Assets.xcassets */; };
 		973D44A52276EF7B002288AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973D44A32276EF7B002288AE /* LaunchScreen.storyboard */; };
+		973D44AE2276EFC2002288AE /* EarthQuake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973D44AD2276EFC2002288AE /* EarthQuake.swift */; };
+		973D44B02276EFD2002288AE /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973D44AF2276EFD2002288AE /* DataService.swift */; };
+		973D44B22276F84F002288AE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973D44B12276F84F002288AE /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		973D44972276EF7A002288AE /* RequestApiEarthQuake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RequestApiEarthQuake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		973D449A2276EF7A002288AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		973D449C2276EF7A002288AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		973D449C2276EF7A002288AE /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		973D449F2276EF7A002288AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		973D44A12276EF7B002288AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		973D44A42276EF7B002288AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		973D44A62276EF7B002288AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		973D44AD2276EFC2002288AE /* EarthQuake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthQuake.swift; sourceTree = "<group>"; };
+		973D44AF2276EFD2002288AE /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		973D44B12276F84F002288AE /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,24 @@
 			isa = PBXGroup;
 			children = (
 				973D449A2276EF7A002288AE /* AppDelegate.swift */,
-				973D449C2276EF7A002288AE /* ViewController.swift */,
+				973D449C2276EF7A002288AE /* TableViewController.swift */,
+				973D44B12276F84F002288AE /* TableViewCell.swift */,
+				973D44AC2276EFB0002288AE /* Model */,
 				973D449E2276EF7A002288AE /* Main.storyboard */,
 				973D44A12276EF7B002288AE /* Assets.xcassets */,
 				973D44A32276EF7B002288AE /* LaunchScreen.storyboard */,
 				973D44A62276EF7B002288AE /* Info.plist */,
 			);
 			path = RequestApiEarthQuake;
+			sourceTree = "<group>";
+		};
+		973D44AC2276EFB0002288AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				973D44AD2276EFC2002288AE /* EarthQuake.swift */,
+				973D44AF2276EFD2002288AE /* DataService.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				973D449D2276EF7A002288AE /* ViewController.swift in Sources */,
+				973D44B22276F84F002288AE /* TableViewCell.swift in Sources */,
+				973D449D2276EF7A002288AE /* TableViewController.swift in Sources */,
+				973D44AE2276EFC2002288AE /* EarthQuake.swift in Sources */,
 				973D449B2276EF7A002288AE /* AppDelegate.swift in Sources */,
+				973D44B02276EFD2002288AE /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,24 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iZl-GF-V4w">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Table View Controller-->
+        <scene sceneID="04A-9x-hbO">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="iZl-GF-V4w" customClass="TableViewController" customModule="RequestApiEarthQuake" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="juZ-Rl-cZc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="140" id="02D-yF-TxS" customClass="TableViewCell" customModule="RequestApiEarthQuake" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="140"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="02D-yF-TxS" id="ANq-uJ-aDb">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIj-dX-gAo">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAH-Rq-jHc" customClass="CustomLabel" customModule="RequestApiEarthQuake" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="139.5" height="139.5"/>
+                                                    <color key="backgroundColor" red="1" green="0.16054049519999999" blue="0.1275059768" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="rAH-Rq-jHc" secondAttribute="height" id="28f-IR-VTc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="-1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jdv-z8-deP">
+                                                    <rect key="frame" x="139.5" y="0.0" width="235.5" height="139.5"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="djM-lV-F16">
+                                                            <rect key="frame" x="0.0" y="0.0" width="235.5" height="139.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aS0-Rv-Qqc">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="235.5" height="46.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oh2-eZ-81x">
+                                                                    <rect key="frame" x="0.0" y="46.5" width="235.5" height="46.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t69-LL-ZQY">
+                                                                    <rect key="frame" x="0.0" y="93" width="235.5" height="46.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="djM-lV-F16" firstAttribute="leading" secondItem="jdv-z8-deP" secondAttribute="leading" id="PQa-7i-AhB"/>
+                                                        <constraint firstAttribute="trailing" secondItem="djM-lV-F16" secondAttribute="trailing" id="hAt-jp-0XM"/>
+                                                        <constraint firstItem="djM-lV-F16" firstAttribute="top" secondItem="jdv-z8-deP" secondAttribute="top" id="ilq-x3-PLt"/>
+                                                        <constraint firstAttribute="bottom" secondItem="djM-lV-F16" secondAttribute="bottom" id="lQ5-LQ-Twe"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="rAH-Rq-jHc" secondAttribute="bottom" id="4qe-ti-KWg"/>
+                                                <constraint firstAttribute="trailing" secondItem="jdv-z8-deP" secondAttribute="trailing" id="G52-hZ-DNz"/>
+                                                <constraint firstAttribute="bottom" secondItem="jdv-z8-deP" secondAttribute="bottom" id="OBw-wX-P2x"/>
+                                                <constraint firstItem="rAH-Rq-jHc" firstAttribute="leading" secondItem="LIj-dX-gAo" secondAttribute="leading" id="So1-MK-O9j"/>
+                                                <constraint firstItem="jdv-z8-deP" firstAttribute="top" secondItem="LIj-dX-gAo" secondAttribute="top" id="Yaf-HN-32n"/>
+                                                <constraint firstItem="rAH-Rq-jHc" firstAttribute="top" secondItem="LIj-dX-gAo" secondAttribute="top" id="tuA-Qf-rBZ"/>
+                                                <constraint firstItem="jdv-z8-deP" firstAttribute="leading" secondItem="rAH-Rq-jHc" secondAttribute="trailing" id="x04-tZ-Cju"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="LIj-dX-gAo" secondAttribute="bottom" id="FxR-Vk-Xo4"/>
+                                        <constraint firstAttribute="trailing" secondItem="LIj-dX-gAo" secondAttribute="trailing" id="NdF-V8-nro"/>
+                                        <constraint firstItem="LIj-dX-gAo" firstAttribute="leading" secondItem="ANq-uJ-aDb" secondAttribute="leading" id="Wj7-Jf-owx"/>
+                                        <constraint firstItem="LIj-dX-gAo" firstAttribute="top" secondItem="ANq-uJ-aDb" secondAttribute="top" id="zy6-RV-WeU"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateStringLabel" destination="t69-LL-ZQY" id="rb1-d7-Ccg"/>
+                                    <outlet property="magLabel" destination="rAH-Rq-jHc" id="aL3-qj-a0C"/>
+                                    <outlet property="placeLabel" destination="aS0-Rv-Qqc" id="RGN-pa-Ee6"/>
+                                    <outlet property="timeStringLabel" destination="oh2-eZ-81x" id="NjW-FD-BUR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="iZl-GF-V4w" id="2Za-0O-wk0"/>
+                            <outlet property="delegate" destination="iZl-GF-V4w" id="2GC-iJ-6Du"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F5f-Gq-431" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="440.80000000000001" y="89.505247376311857"/>
         </scene>
     </scenes>
 </document>
